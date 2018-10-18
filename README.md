@@ -18,3 +18,9 @@ Now, back inside of your `WWdiscordBot` (if you need to go back to this folder, 
 For the purpose of my example, let's create a file called `yourname.txt` where you change that to be your first name. In this file, simply write your name (full or last, doesn't matter) and save it in the `WWdiscordBot`.
 
 Back inside of your gitbash, you will need to tell git you changed the this file, to do this, we do `git add yourname.txt`. Now we need to do `git commit -m "yourname"`. After this we want to do `git push origin master` to then push this change to the repository (this will be visible to everyone at this point).
+
+# Python
+
+This project will be programmed in python, saying such, you should download [Python 3](https://www.python.org/downloads/release/python-370/) (I will need to find which one is portable and contains pip) and [documentation is here](https://docs.python.org/3/).
+
+For getting the proper module needed for, we must do `cd /c/Users/<student>/AppData/Local/Programs/Python/Python37-32/Scripts/`. *This is if you have python installed, I will need to find where it is otherwise.* *Make sure to change `<student>` with your first intiaial + last name + birth date.* At this point we can now do `./pip3.exe install -U git+https://github.com/Rapptz/discord.py@rewrite` which will give us our discord module we will be using. *I know not of the specifics, but the purpose to the oddly structured command is because the actual discord install is for Python 3.4-3.6 so it is longer to change it to Python 3.7.* *Side note, solution is from [here](https://github.com/Rapptz/discord.py/issues/1637#issuecomment-426805293) if interested.*
