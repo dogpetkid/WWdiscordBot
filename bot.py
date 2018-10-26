@@ -24,10 +24,17 @@ async def on_ready():
 # When the bot sees a message in the chat, it will run this event
 @client.event
 async def on_message(message):
-    if (message.content == "cookie"):
+    if (message.content.lower() == "okay, now that's pretty"):
         # await makes sure the client is actually ready to send the message
-        ##await client.send_message(message.channel, ":cookie:")
-        await message.channel.send(":cookie:")
+        ##await client.send_message(message.channel, "EPIC")
+        await message.channel.send("EPIC")
+    
+    if (message.content.lower() == "ping!"):
+        await message.channel.send("<@%s> PONG!" % message.author.id)
+	
+    #list off n digits of pi
+    #if ("pi(" in message.content.lower()):
+		
 
 
 # This specifies the bot we are controlling by using the token of the bot
